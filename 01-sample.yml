@@ -3,10 +3,10 @@
   tasks:
     - name: Print Hello
       ansible.builtin.debug:
-          msg:Hello
-      - name: print Fruit
-          debug:
-            msg: Apple
+        msg:Hello
+    - name: print Fruit
+      debug:
+        msg: Apple
 # name is an optional key, but always use a best practice
 # ansible.builtin.debug is collection, this is supported from 2.10 version, this is future, so we use this
 # debug is module, this is supported only till 2.9 version,this will soon deprecate, we will not codsider this usage
