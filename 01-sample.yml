@@ -1,4 +1,4 @@
-- name: Intro to playbook
+ - name: Intro to playbook
   host: all
-  tasks:
-  
+        tasks:
+        - name:
