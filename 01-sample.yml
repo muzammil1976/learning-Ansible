@@ -1,6 +1,6 @@
- - name: Intro to playbook
-   hosts: all
-   tasks:
+- name: Intro to playbook
+  hosts: all
+  tasks:
     - name: Print Hello
       ansible.builtin.debug:
           msg:Hello
