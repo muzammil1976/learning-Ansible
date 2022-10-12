@@ -1,10 +1,10 @@
  - name: Intro to playbook
-  host: all
-  tasks:
-   - name: Print Hello
-     ansible.builtin.debug:
-             msg:Hellow
-        - name: print Fruit
+   hosts: all
+   tasks:
+    - name: Print Hello
+      ansible.builtin.debug:
+          msg:Hello
+      - name: print Fruit
           debug:
             msg: Apple
 # name is an optional key, but always use a best practice
