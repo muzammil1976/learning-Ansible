@@ -1,4 +1,4 @@
-- name: Play Level vers
+- name: Play Level vars
   hosts: localhost
   vars:
     URL: play.example.com
