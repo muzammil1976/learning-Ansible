@@ -1,8 +1,8 @@
-- name: Play Level vars
-  hosts: localhost
-  vars:
-    URL: play.example.com
-  tasks:
+ - name: Play Level vars
+   hosts: localhost
+   vars:
+     URL: play.example.com
+   tasks:
     -name: Print URL
-     ansible.builtin.debug:
-       name: URL = {{ URL }}
+      ansible.builtin.debug:
+        name: URL = {{ URL }}
