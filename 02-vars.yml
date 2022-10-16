@@ -3,18 +3,18 @@
   vars:
     URL: play.example.com
   tasks:
-   -name: Print URL
-    ansible.builtin.debug:
-       name: URL = {{ URL }}
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL = {{ URL }}
        
 - name: Vars from files
   hosts: localhost
   vars_files:
     - demo-vars.yml
   tasks:
-    -name: Print URL
-     ansible.builtin.debug:
-       msg: URL = {{ URL }}
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL = {{ URL }}
        
 - name: Vars from tasks
   hosts: localhost
