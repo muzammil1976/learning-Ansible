@@ -25,7 +25,7 @@
       vars:
         URL: tasks.example.com
         
-- name: vars for inventory
+- name: vars from inventory
   hosts: localhost
   tasks:
     - name: Print URL
