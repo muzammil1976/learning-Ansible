@@ -2,6 +2,6 @@
   ansible.builtin.debug:
     msg: Hello
   
-- name:Print URL
+- name: Print URL
   ansible.builtin.debug:
     msg: URL = {{URL}}
