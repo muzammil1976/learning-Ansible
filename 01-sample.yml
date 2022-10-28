@@ -1,3 +1,4 @@
+
 - name: Intro to playbook
   hosts: all
   tasks:
