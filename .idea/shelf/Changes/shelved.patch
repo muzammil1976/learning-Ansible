@@ -1,0 +1,23 @@
+Index: roles/04-loops.yml
+===================================================================
+diff --git a/roles/04-loops.yml b/roles/04-loops.yml
+deleted file mode 100644
+--- a/roles/04-loops.yml	(revision 4186a05e9e122344e6d3e1a70f4c88ea804d50aa)
++++ /dev/null	(revision 4186a05e9e122344e6d3e1a70f4c88ea804d50aa)
+@@ -1,15 +0,0 @@
+-- name: Demo on loops
+-  hosts: localhost
+-  tasks:
+-    - name: loop Example
+-      debug:
+-        msg: Fruit = {{item}}
+-      loop:
+-        - apple
+-        - banana
+-    - name: loop Exaple with Maps
+-      debug:
+-        msg: Fruit = {{item.name}}, Quantity = {{item.quantity}}
+-      loop:
+-        - {name: apple, quantity: 10}
+-        - {name: banana, quantity: 30}
+\ No newline at end of file
